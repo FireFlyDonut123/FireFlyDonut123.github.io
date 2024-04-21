@@ -36,26 +36,24 @@
                     <div class="text" style="padding-left: 27px;"> Gallery</div>
                     <div class="header-line right"></div>
                 </div>
-                <div class="images">
-                    <div class="first image-column">
-                        <img src="/Assets/gallery/Gallery1.jpeg" alt="">
-                        <img src="/Assets/gallery/Gallery2.jpeg" alt="">
-                        <img src="/Assets/gallery/Gallery3.jpeg" alt="">
-                    </div>
-                    <div class="second image-column">
-                        <img src="/Assets/gallery/Gallery4.jpeg" alt="">
-                        <img src="/Assets/gallery/Gallery5.jpeg" alt="">
-                        <img src="/Assets/gallery/Gallery6.jpeg" alt="">
-                    </div>
-                    <div class="third image-column">
-                        <img src="/Assets/gallery/Gallery7.jpeg" alt="">
-                        <img src="/Assets/gallery/Gallery8.jpeg" alt="">
-                        <img src="/Assets/gallery/Gallery9.jpeg" alt="">
-                    </div>
+                <div class="images" id="galleryContainer">
+                    
                 </div>
+                <div class="header" style="padding-top: 20px;">
+                    
+                    <a class="my-button" onclick="loadGallery()"  id="loadButton"href="#">Muat Gambar</a>
+                    <a class="my-button" onclick="previousGallery()" id="previousButton" style="display:none"href="#">Sebelumnya</a>
+                    <a class="my-button" onclick="nextGallery()" id="nextButton" style="display:none" href="#">Selanjutnya</a>
+
+                    
+                    
+                
+                
             </div>
-          
+            
+        
         </div>
+        
     </main>
     <footer class="footer">
         <div class="left">
@@ -66,7 +64,7 @@
 </div>
 
 
-
+<script src="scriptGallery.js"></script>
 </body>
 
 </html>

@@ -33,7 +33,7 @@
             <div class="about-content">
               
                 <div class="column left">
-                    <div class="text">Halo! Saya Billy Juan Valentino Ambarura, <span id="typed" class="iAm"></span></div>
+                    <div class="text" id="typewriter"><span id="typed" class="iAm"></span></div>
                     <p>
                     seorang mahasiswa di Universitas Sam Ratulangi jurusan Informatika. Saya
                     adalah seorang yang bersemangat dalam menjelajahi dunia teknologi, dan saya sangat antusias untuk mempelajari segala hal
@@ -54,6 +54,20 @@
     </div>
 
     <div class="nav-touch-close" id="nav-tc-js"></div>
+ <script>
+    var text = "Halo! Saya Billy Juan Valentino Ambarura ";
+    var speed = 100; // milliseconds per character
+
+    function typeWriter() {
+        if (text.length > 0) {
+            document.getElementById("typewriter").innerHTML += text.charAt(0);
+            text = text.substring(1);
+            setTimeout(typeWriter, speed);
+        } 
+    }
+
+    typeWriter();
+</script>
 
 
 

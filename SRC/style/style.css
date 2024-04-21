@@ -1793,3 +1793,36 @@ header.scrolled {
 		row-gap: 10px;
 	}
 }
+a.my-button {
+	background-color: #e53745;
+	color: #fff;
+	font-family: Trebuchet MS;
+	font-size: 18px;
+	font-weight: 800;
+	font-style: normal;
+	text-decoration: none;
+	padding: 14px 15px;
+	border: 0px solid #000;
+	border-radius: 10px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+a.my-button span {
+	margin-right: 15px;
+	display: block;
+	width: 29px;
+	height: 29px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	transform: rotate(0deg);
+}
+
+a.my-button:hover {
+	background-color: #e86068;
+}
+
+a.my-button:active {
+	transform: scale(0.95);
+}
